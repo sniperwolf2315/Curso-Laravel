@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('nombre',50);
             $table->string('slug',50);
             $table->timestamps();
+            $table->string('observaciones',100);
         });
     }
 
