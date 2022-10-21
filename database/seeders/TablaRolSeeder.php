@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use Carbon\Carbon;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -23,7 +24,8 @@ class tablaRolSeeder extends Seeder
         ];
         foreach($rol as $key => $value){
             DB::table('rol')->insert([
-                'nombre' => $value
+                'nombre' => $value,
+                'created_at'=> Carbon::now()->format('Y-m-d H:i:s')
             ]);
         }
         
