@@ -6,6 +6,7 @@ use App\Models\Permiso;
 use Carbon\Factory;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class TablaPermisoSeeder extends Seeder
 {
